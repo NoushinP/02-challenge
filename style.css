@@ -1,0 +1,21 @@
+:root {
+
+}
+
+.h1 {
+    color: pink;
+}
+
+.headbox {
+
+}
+
+
+aside {
+    flex: 30%;
+    background-color: #e69fec;
+    padding: 20px;
+    flex-wrap: wrap;
+    float:left;
+    display:inline-block;
+  }
