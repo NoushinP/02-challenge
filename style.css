@@ -1,21 +1,132 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 :root {
+    --space: rgb(92, 156, 241);
+}
+
+body {
+    background-color: #b2c5ee;
+}
+
+.container {
+    position: relative;
+}
+
+.header1 {
+    position: relative;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+header h1 {
+    color:aliceblue;
+    font-size: 40px;
+    font-style: italic;
+}
+
+header p {
+    font-style: bold;
+    text-align: center;
 
 }
 
-.h1 {
-    color: pink;
+
+.image1 img {
+    width: 100%;
+    height: 200px;
+    flex-wrap: wrap;
 }
 
-.headbox {
+
+body nav {
+    width: 100%;
+    height: 50px;
+    box-sizing: 20 10 auto;
+    background:rgb(11, 1, 44);
+}
+
+body nav ul li {
+    display: inline-flex;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    margin-left: 5%;    
+}
+
+
+.navbar {
+    
+
+}
+
+
+.sidebar {
+    
 
 }
 
 
 aside {
     flex: 30%;
-    background-color: #e69fec;
+    background-color: #dd4bc0;
     padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
     flex-wrap: wrap;
-    float:left;
+    float: left;
     display:inline-block;
   }
+
+.contact {
+
+}
+
+.part1 {
+
+}
+
+aside article li {
+    font-size: 15px;
+    color:rgb(20, 16, 106);
+    font-weight: bold;
+    margin: 60px auto;
+}
+
+.aboutme {
+    width: 75%;
+    background-color: rgb(255, 185, 244);
+    margin: 3% 20% auto;
+}
+
+section article p {
+    margin: 25px 10px auto;
+    font-size: 15px;
+}
+
+.Projects {
+    width: 75%;
+    height: 100px;
+    background-color: rgb(251, 251, 43);
+    margin: 3% 20% auto;
+}
+ 
+.Experience {
+    width: 75%;
+    height: 100px;
+    background-color: rgb(57, 251, 43);
+    margin: 3% 20% auto;
+}
+
+.Education {
+    width: 75%;
+    height: 100px;
+    background-color: rgb(126, 43, 251);
+    margin: 3% 20% auto;
+}
