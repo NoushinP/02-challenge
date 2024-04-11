@@ -1,19 +1,25 @@
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 :root {
-    --space: rgb(92, 156, 241);
+    --space: rgb(209, 92, 241);
 }
 
 body {
-    background-color: #b2c5ee;
+    background-color: black;
+    flex-wrap: wrap;
 }
 
-.container {
+@media screen and (max-width: 990px) {
+    body {
+        background: rgb(247, 224, 248);
+    }    
+}
+
+
+body header div img {
     position: relative;
 }
 
@@ -25,22 +31,29 @@ body {
 
 
 header h1 {
-    color:aliceblue;
-    font-size: 40px;
+    color:rgb(255, 255, 255);
+    font-size: 50px;
     font-style: italic;
+    margin: 5px;
+    text-align: center;
+}
+
+h2 {
+    margin: 5px 5px auto;
 }
 
 header p {
     font-style: bold;
     text-align: center;
-
+    margin: 5px;
+    color:#ffffff;
 }
 
 
 .image1 img {
     width: 100%;
     height: 200px;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
 }
 
 
@@ -48,85 +61,147 @@ body nav {
     width: 100%;
     height: 50px;
     box-sizing: 20 10 auto;
-    background:rgb(11, 1, 44);
+    flex-wrap: wrap;
+    background:rgb(171, 119, 178);
+    text-align: center;
+    font-weight: bold;
+    color: white;
+  
+}
+
+@media screen and (max-width: 700px) {
+    body nav {
+        background: rgb(178, 211, 227);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
 }
 
 body nav ul li {
     display: inline-flex;
+    margin: 10px 30px auto; 
     font-size: 25px;
+    flex-shrink: inherit;     
+}
+
+nav ul li a:hover {
+    background-color: fuchsia;
     color: white;
-    text-align: center;
-    padding: 10px 15px;
-    margin-left: 5%;    
 }
 
-
-.navbar {
-    
-
+@media screen and (max-width: 700px) {
+    body nav ul li{
+        flex-direction: row;
+        font-size: 15px;
+    }  
 }
-
-
-.sidebar {
-    
-
-}
-
 
 aside {
-    flex: 30%;
-    background-color: #dd4bc0;
-    padding: 20px;
-    margin-left: 20px;
-    margin-top: 20px;
-    flex-wrap: wrap;
+    flex: 2 1 200px;
+    width: 20%;
+    height: 70%;
+    background-color: #150a37;
+    color: #ffffff; 
     float: left;
     display:inline-block;
+    margin-top: 2%;
   }
 
-.contact {
-
-}
-
-.part1 {
-
-}
-
 aside article li {
-    font-size: 15px;
-    color:rgb(20, 16, 106);
+    font-size: 20px;
+    color:rgb(255, 255, 255);
     font-weight: bold;
     margin: 60px auto;
+    border: 3px solid white;
+    list-style:none;
 }
 
+aside li::before {
+    content: '\1F98B';
+}
+
+aside a:link {
+    color: white;
+}
+
+aside a:hover {
+    background-color: fuchsia;
+    color: white;
+}
+
+main {
+    flex: 2 1 200px;
+    margin-top: 2%;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    flex: 2 1 200px;
+}
 .aboutme {
-    width: 75%;
+    width: 90%;
     background-color: rgb(255, 185, 244);
-    margin: 3% 20% auto;
+    margin: 3% 5% auto;
+}
+
+.aboutme p {
+    margin: 5px 5px;
 }
 
 section article p {
-    margin: 25px 10px auto;
     font-size: 15px;
 }
 
-.Projects {
-    width: 75%;
-    height: 100px;
-    background-color: rgb(251, 251, 43);
-    margin: 3% 20% auto;
-}
- 
 .Experience {
-    width: 75%;
-    height: 100px;
-    background-color: rgb(57, 251, 43);
-    margin: 3% 20% auto;
+    width: 90%;
+    height: 150px;
+    background-color: rgb(133, 109, 131);
+    margin: 3% 5% auto;
 }
 
 .Education {
-    width: 75%;
+    width: 90%;
     height: 100px;
-    background-color: rgb(126, 43, 251);
-    margin: 3% 20% auto;
+    background-color: rgb(158, 48, 99);
+    margin: 3% 5% auto;
+}
+
+.container {
+    max-width: 90%;
+    width: 100%;
+    margin: 3% 5% auto;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+    background: rgb(163, 153, 160);
+    flex-direction: row;
+    padding: 1%;
+}
+
+/* //source cite: https://www.youtube.com/watch?v=PsNaoDhzQm0&list=PLpwngcHZlPae68z_mLFNfbJFIJVJ_Zcx2//    CodingNepal, published:7months ago*/
+.slider-wrapper .image-list {
+    display:grid;
+    gap: 10px;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.image-item {
+    width: 200px;
+    height: 200px;
+}
+
+.image-item:hover {
+    background: blueviolet;
+}
+
+h3 {
+    color: white;
+    
 }
