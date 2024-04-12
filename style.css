@@ -14,7 +14,7 @@ body {
 
 @media screen and (max-width: 990px) {
     body {
-        background: rgb(247, 224, 248);
+        background: #443f53;
     }    
 }
 
@@ -60,22 +60,32 @@ header p {
 body nav {
     width: 100%;
     height: 50px;
-    box-sizing: 20 10 auto;
     flex-wrap: wrap;
     background:rgb(171, 119, 178);
     text-align: center;
     font-weight: bold;
     color: white;
+    font-size:5pt;
   
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 780px) {
     body nav {
         background: rgb(178, 211, 227);
         justify-content: center;
         align-items: center;
         text-align: center;
-
+    }
+    body nav ul li a{
+        font-size: 12pt;
+        flex-direction: row;
+    }
+    .aboutme:hover,.Experience:hover,.Education:hover
+    {
+        box-shadow:0px 0px 17px 10px rgba(255, 255, 255, 0.916), 0 0px 20px 0 rgb(247, 241, 241);
+    }
+    aside {
+        width: 23%;
     }
 }
 
@@ -87,20 +97,18 @@ body nav ul li {
 }
 
 nav ul li a:hover {
-    background-color: fuchsia;
-    color: white;
+    color: rgb(72, 67, 72);
 }
 
-@media screen and (max-width: 700px) {
-    body nav ul li{
-        flex-direction: row;
-        font-size: 15px;
-    }  
+
+.navbar ul li a{
+    text-decoration: none;
+    color:black;
 }
 
 aside {
     flex: 2 1 200px;
-    width: 20%;
+    width: 15%;
     height: 70%;
     background-color: #150a37;
     color: #ffffff; 
@@ -110,25 +118,27 @@ aside {
   }
 
 aside article li {
-    font-size: 20px;
+    font-size: 18px;
     color:rgb(255, 255, 255);
     font-weight: bold;
-    margin: 60px auto;
-    border: 3px solid white;
-    list-style:none;
+    margin: 10px auto;
+    /* border: 3px solid white; */
+    /* list-style:none; */
 }
 
 aside li::before {
     content: '\1F98B';
 }
 
-aside a:link {
+aside a {
     color: white;
+    text-decoration: none;
 }
 
 aside a:hover {
-    background-color: fuchsia;
-    color: white;
+    /* background-color: fuchsia; */
+    color: rgba(255, 255, 255, 0.71);
+    box-shadow:-1px 2px 5px -1px #bd1e1e;    
 }
 
 main {
@@ -193,15 +203,33 @@ section article p {
 }
 
 .image-item {
+    border-radius: 8%;
     width: 200px;
     height: 200px;
 }
 
-.image-item:hover {
-    background: blueviolet;
+.image-item:hover {    
+    box-shadow:0 8px 10px 0 rgba(11, 10, 10, 0.2), 0 6px 20px 0 rgba(11, 10, 10, 0.2);
 }
 
 h3 {
     color: white;
     
+}
+
+.aboutme:hover,.Experience:hover,.Education:hover
+{
+    box-shadow:0px 0px 17px 10px rgba(255, 255, 255, 0.916), 0 0px 20px 0 rgb(247, 241, 241);
+}
+.part1 ul{
+    padding: 2px;
+}
+
+#myPic
+{
+    width: 90%;
+    margin: 10% 5%;
+}
+.part1 h2{
+    text-align: center;
 }
