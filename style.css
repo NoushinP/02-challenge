@@ -155,12 +155,11 @@ main section {
 .aboutme {
     width: 90%;
     background-color: rgb(255, 185, 244);
-    margin: 3% 5% auto;
+    margin: auto;
 }
 
 .aboutme p {
-    margin: 5px 5px;
-    height: auto;
+    margin: auto;
 }
 
 section article p {
@@ -171,20 +170,20 @@ section article p {
     width: 90%;
     height: auto;
     background-color: rgb(133, 109, 131);
-    margin: 3% 5% auto;
+    margin: 1% auto;
 }
 
 .Education {
     width: 90%;
     height: auto;
     background-color: rgb(158, 48, 99);
-    margin: 3% 5% auto;
+    margin: 1% auto;
 }
 
 .container {
     max-width: 90%;
     width: 100%;
-    margin: 3% 5% auto;
+    margin: 1% auto;
     overflow-x: auto;
     align-items: center;
     justify-content: center;
