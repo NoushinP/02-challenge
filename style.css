@@ -51,9 +51,10 @@ header p {
 
 
 .image1 img {
-    width: 100%;
-    height: 200px;
-    flex-wrap: wrap;  
+    width: 100%;  /* Adjust width to container */
+    height: auto; /* Prevents stretching */
+    max-width: 500px; /* Set a max width to control size */
+    
 }
 
 
@@ -159,6 +160,7 @@ main section {
 
 .aboutme p {
     margin: 5px 5px;
+    height: auto;
 }
 
 section article p {
@@ -167,14 +169,14 @@ section article p {
 
 .Experience {
     width: 90%;
-    height: 150px;
+    height: auto;
     background-color: rgb(133, 109, 131);
     margin: 3% 5% auto;
 }
 
 .Education {
     width: 90%;
-    height: 100px;
+    height: auto;
     background-color: rgb(158, 48, 99);
     margin: 3% 5% auto;
 }
@@ -232,4 +234,8 @@ h3 {
 }
 .part1 h2{
     text-align: center;
+}
+
+h3 {
+    color: #150a37;
 }
